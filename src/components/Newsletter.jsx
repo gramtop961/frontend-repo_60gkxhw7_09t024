@@ -24,13 +24,13 @@ function Newsletter() {
   }
 
   return (
-    <section id="newsletter" className="py-16 bg-gray-50">
+    <section id="newsletter" className="py-16 bg-[#F7F4EE]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="rounded-2xl bg-amber-600 text-white p-8 sm:p-10 shadow-xl">
+        <div className="rounded-2xl bg-black text-white p-8 sm:p-10 shadow-xl">
           <div className="grid md:grid-cols-2 gap-6 items-center">
             <div>
-              <h3 className="text-2xl sm:text-3xl font-black tracking-tight">Join the Touchline Club</h3>
-              <p className="text-amber-50/90 mt-2">Early drops, limited runs, and 10% off your first order.</p>
+              <h3 className="text-2xl sm:text-3xl font-serif font-bold tracking-tight">Join the Touchline Club</h3>
+              <p className="text-white/70 mt-2">Early drops, limited runs, and 10% off your first order.</p>
             </div>
             <form onSubmit={onSubmit} className="flex gap-3">
               <input
@@ -39,9 +39,9 @@ function Newsletter() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
-                className="flex-1 rounded-md px-4 py-3 text-gray-900 placeholder:text-gray-500"
+                className="flex-1 rounded-md px-4 py-3 text-neutral-900 placeholder:text-neutral-500"
               />
-              <button type="submit" className="px-5 py-3 rounded-md bg-black text-white font-semibold hover:bg-gray-900">
+              <button type="submit" className="px-5 py-3 rounded-md bg-white text-black font-semibold hover:bg-neutral-200">
                 {status === 'loading' ? 'Joining…' : 'Join'}
               </button>
             </form>
